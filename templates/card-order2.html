@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Order</title>
+    <link rel="stylesheet" href="{{url_for ('static', filename = 'css/kart-order.css')}}">
+</head>
+<body>
+    {% extends 'header.html' %}
+    {% block content %}
+    {%from "_formhelpers.html" import render_field%}
+    <main></main>
+
+    <div class="uppertext">
+        <b>Öz kartını onlayn sifariş et</b>
+
+       
+    </div>
+    <div class="order-container">
+    <div class="stage-names">
+
+        <div class="first-step2">
+            <div class="one-circle"><div class="one"><span>&#10004;</span></div></div>
+            <div class="one-text2">Kart məlumatları</div>
+            
+           
+
+        </div>
+        
+        <div class="second-step2">
+            <div class="two-circle"><div class="two">2</div></div>
+            <div class="two-text2">Şəxsi və ödəniş məlumatları</div>
+
+        </div>
+
+        <div class="third-step2">
+            <div class="three-circle"><div class="three">3</div></div>
+            <div class="three-text2">SMS Təsdiq</div>
+
+        </div>
+
+    </div>
+
+    <br>
+    <hr>
+
+    <div class="second-stage">
+
+ <div class="personal-firstpart">
+
+
+    <form action="" method="POST">
+        {{ form2.csrf_token }}
+        {{form2.name.label}}
+        <br>
+        {{form2.name}}
+
+     
+        <br>
+        {{form2.surname}}
+
+
+    
+        <br>
+        {{form2.father}}
+   
+    
+</div>
+<div class="vl-in-stage2"></div>
+       
+
+<div class="personal-secondpart">
+    {{form2.unique_code.label}}
+  
+   
+     
+    <div class="Fincode-input">
+    
+        {{form2.unique_code}}    
+    </div>
+    
+    
+    <div class="question-mark">
+    
+        <button type="button" data-bs-toggle="tooltip" data-bs-placement="top" id="question-mark" title="This is tooltip">
+            
+           ?
+</button>
+    
+    </div>
+  
+
+    <div class="eynilik">
+        {{form2.secret.label}}
+        <br>
+        {{form2.secret}}
+    </div>
+    
+</div>
+
+<div class="vl-in-stage2"></div>
+
+
+<div class="personal-thirdpart">
+    <label for="">Kartın ödəniş növünü seçin</label>
+    <br>
+    <input type="text" placeholder="Online" readonly class="online-pay">
+    <br>
+    <input type="text" placeholder="Terminalla" class="terminal-pay" readonly >
+    
+</div>
+</div>
+<hr>
+
+<div class="personal-fourthpart">
+    <div class="four1">
+    {{form2.phone.label}}
+    <br>
+    <span>+994</span>
+    {{form2.phone}}
+    {{form2.phone_continue}}
+</div>
+
+
+<div class="four2">
+    {{form2.email.label}}
+    <br>
+    {{form2.email}}
+</div>
+
+<div class="four3">
+    {{form2.asan}}
+    {{form2.asan.label}}
+      
+</div>
+    
+
+</div>
+
+<hr>
+
+<div class="personal-fifthpart">
+<div class="security-code">
+    {{form2.robot_code}}
+
+</div>
+<div class="sec-image">
+    <img src="{{robot_image}}" alt="">
+</div>
+
+
+</div>
+
+<hr>
+
+
+<div class="personal-sixth">
+    <button type="submit" id="geriye"><a href="http://127.0.0.1:5000/order1">Geriyə</a></button>
+    <button type="submit" id="Novbeti2"><a href="http://127.0.0.1:5000/order3">Növbəti</a></button>
+</div>
+
+
+
+
+
+
+
+
+
+
+</div>
+
+</form>
+
+
+
+{% endblock  %}
+</body>
+</html>

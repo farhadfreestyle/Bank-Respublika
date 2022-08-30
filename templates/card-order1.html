@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Order</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{url_for ('static', filename = 'css/kart-order.css')}}">
+
+  
+</head>
+<body>
+    {% extends 'header.html' %}
+    {% block content %}
+    {%from "_formhelpers.html" import render_field%}
+    <main> 
+        <div class="uppertext">
+            <b>Öz kartını onlayn sifariş et</b>
+            
+        </div>
+        <div class="order-container">
+            <div class="stage-names">
+                
+                <div class="first-step">
+                    <div class="one-circle"><div class="one">1</div></div>
+                    <div class="one-text">Kart məlumatları</div>
+                    
+                    
+                    
+                </div>
+                
+                <div class="second-step">
+                    <div class="two-circle"><div class="two">2</div></div>
+                    <div class="two-text">Şəxsi və ödəniş məlumatları</div>
+                    
+                </div>
+
+                <div class="third-step">
+                    <div class="three-circle"><div class="three">3</div></div>
+                    <div class="three-text">SMS Təsdiq</div>
+                    
+                </div>
+                
+    </div>
+    <br>
+    
+    <form action="" method='POST'>
+        {{ form1.csrf_token }}
+        <div class="first-stage">
+            
+    <div class="card-selecting">
+
+        <div class="section1">
+
+        <div id="selected-card-name">
+            
+            {{form1.card.label}}
+            <br>
+            {{form1.card}}
+            
+        </div>        
+            
+          
+            <br>
+            {{form1.time.label}}
+            <br>
+            {{form1.time}}
+            
+            
+        </div>
+        
+        
+        <div class="section2">
+            
+            {{form1.currency.label}}
+            <br>
+            {{form1.currency}}
+            
+            
+            
+            <br>
+            <br>
+            {{form1.preparation.label}}
+            <br>
+            {{form1.preparation}}
+            
+            <br>
+            
+            
+        
+            
+        </div>
+        <div>{{name}}</div>
+        <div class="vl"></div>
+        
+
+
+    <div class="card-picture">
+
+    </div>
+
+    
+    
+</div>  
+<div class="description">Kartın təsviri</div>
+
+<hr>
+
+<div class="filial">
+    <div class="filial-section1">
+        
+        <div class="form-check">
+            <label for="">Əlavə xidmətlər</label>
+            <br>
+            <div class="SMS">
+                {{form1.sms}}
+                {{form1.sms.label}}
+    
+               
+            </div>
+        
+            <p>*Mobil banking və Internet banking xidməti avtomatik qoşulur</p>
+        </div>
+</div>
+<div class="vl2"></div>
+
+<div class="filial-section2">
+    <div id="filial-or-kuryer">
+        {{form1.card_take.label}}
+        <br>
+        {{form1.card_take}}
+    </div>
+    
+    
+    
+    
+    <br>
+    <div class="chosen-filial">
+        {{form1.branch}}
+    </div>
+    <br>
+    <div id="chosen-location">
+        {{form1.location.label}}
+        <br>
+        {{form1.location}}
+    </div>
+       
+    
+    
+    
+</div>
+<div class="filial-last">
+    
+    
+    {{form1.amount.label}}
+    <br>
+    {{form1.amount}}
+    
+</div>
+
+
+
+
+</div>
+
+<hr>
+
+<div class="mebleg">
+    <div class="mebleg-all">
+    <div class="mebleg-text">
+        Ödəniləcək məbləğ
+    </div>
+    <div class="reqem"></div>
+    30 AZN
+</div>
+<div class="mebleg-extra">
+    
+    
+    <div class="medaxil">
+        
+    </div>
+    
+    
+    <div class="mebleg-muddet"></div>
+</div>
+
+</div>
+
+
+<hr>
+
+
+
+</div>
+
+
+
+<div class="novbeti">
+    <button type="submit"><a href="http://127.0.0.1:5000/order2">Növbəti</a></button>
+</div>
+</div>
+</form>
+</main>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>     
+<script src="{{url_for('static', filename = 'js/kart-order.js')}}"></script>
+
+
+{% endblock %}
+
+</body>
+</html>

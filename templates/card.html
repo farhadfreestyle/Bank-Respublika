@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kart iç</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{url_for ('static', filename = 'css/kart.css')}}">
+</head>
+<body>
+    {% extends 'header.html' %}
+    {% block content %}
+
+
+    {%for i in data%}
+    {%if i.id == kart_index%}
+    
+        <div class="whole" style="background-color: #0920a3; color: white;">
+    <div class="card mb each-card zero" style="border: none; margin-top: 50px;background-color: #0920a3">
+        <div class="row g-0 wider-card">
+        
+           <div class="col-md-3">
+             <img src="{{i.image_url}}" class="img-fluid rounded-start" alt="..." style="width: 200px; height: 120px;  margin-top: 100px; margin-left: 20%;">
+                  <br>
+             <button class="sifaris">Sifariş</button>
+             <br>
+           
+
+           </div>
+           <div class="col-md-8">
+             <div class="card-body">
+               <h5 class="card-title"><a href="">{{i.ad}}<img src="" style="width: 12px"  alt=""></a></h5>
+               <p class="card-text">{{i.description}}</p>
+               <div class="container">
+                 <div class="row">
+                   <div class="col-3">
+                     <p class="description-name">Buraxılma haqqı</p>
+                     <p class="features-description">{{i.haqq}}</p>
+                   </div>
+                   <div class="col-3">
+                     <p class="description-name">İstifadə müddəti</p>
+                     <p class="features-description">{{i.muddet}}</p>
+                   </div>
+                   <div class="col-3">
+                     <p class="description-name">Qalıq üzrə faiz AZN</p>
+                     <p class="features-description">{{i.qaliq}}</p>
+                   </div>
+                   <div class="col-3">
+                     <p class="description-name">Valyuta</p>
+                     <p class="features-description">{{i.valyuta}}</p>
+                   </div>
+                   <div class="col-3">
+                     <p class="description-name">Kredit xətti</p>
+                     <p class="features-description">{{i.kredit}}</p>
+                   </div>
+                 </div>
+               
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+
+
+
+</div>
+
+<div class="alt-block">
+    <div class="robot">
+        <img src="/home/farhadfreestyle/Downloads/Final_project/bankrespublika-project-wolves/images/robot.png" alt="" style="width: 500px;">
+    </div>
+
+    <div class="dost">
+        <span>Salam dostum!</span>
+        <br>
+    Bu gündən Sən daha xoşbəxt və zəngin olacaqsan! Bunun üçün sənə digər qalaktikadan xüsusi bir hədiyyə gətirmişəm - <b>NeoKart</b>!
+    <br>
+
+    NeoKart vasitəsilə alış-veriş etdiyin yerdən asılı olmayaraq (restoran, yanacaqdoldurma məntəqəsi, mağaza və s.) hər zaman və hər yerdə Neobonuslar qazanacaqsan. Toplanan Neobonusları isə, keşbek, danışıq dəqiqələri, mobil internet və ya səyahət millərinə dəyişdirə biləcəksən. Bu isə o deməkdir ki, nə qədər çox pul xərcləsən, sənə bir o qədər çox Neobonus verə biləcəm! Bunun üçün NeoKartınla ödənişləri POS terminal vasitəsilə və ya sevdiyin saytlarda onlayn rejimdə etməyin kifayətdir.
+
+    <br>
+    <br>
+    <br>
+
+    <span>Neo ilə Hər Yerdə Qazan!</span>
+   
+</div>
+<br>
+
+<div class="pics-text" style="width: 70%;">
+    <div class="one">
+    <img src="https://www.bankrespublika.az/uploads/NEO/cashback.png" alt="" style="width: 50px; left: 0;">
+    <br>
+    KeşBek
+</div>
+
+<div class="two">
+    <img src="https://www.bankrespublika.az/uploads/NEO/mil.png" alt="" style="width: 50px;">
+    <br>
+    Uçuş Milləri
+</div>
+
+<div class="three">
+    <img src="https://www.bankrespublika.az/uploads/NEO/deqiqe.png" alt="" style="width: 50px;">
+    <br>
+    Dəqiqələr
+    <br>
+İnternet
+</div>
+
+
+
+<div class="four">
+    <img src="https://www.bankrespublika.az/uploads/NEO/faiz%20hesaba.png" alt="" style="width: 50px;">
+    <br>
+    Hesab
+    <br>
+qalığına faiz
+</div>
+
+
+</div>
+
+    {{i.image}}
+    <br>
+    <br>
+<div class="table" style="width: 80%; margin-left: 10%;">
+    <table>
+        <tr>
+     
+            <th style="border-bottom: 1px solid gray; width: 1000px;">{{i.ad}}</th>
+         
+        </tr>
+
+        <tr>
+ 
+            <td>Müddət {{i.muddet}}</td>
+         
+        </tr>
+
+        <tr>
+            <td>Qiymət {{i.haqq}}</td>
+        </tr>
+
+        <tr>
+            <td>Qalıq üzrə faiz {{i.qaliq}}</td>
+
+        </tr>
+
+        <tr>
+            <td>Xoşgəldin Bonusu 2000</td>
+
+        </tr>
+    </table>
+
+    <br>
+    <br>
+
+
+    <button class="whatsapp">Whatsapp-la müraciət et!</button>
+    <br>
+
+    <button class="online">Online sifariş ver!</button>
+    <br>
+    <br>
+
+
+    NeoKart ilə heç bir ödəniş etməsən belə, kartındakı pulun sənə gəlir gətirəcək. Hər ay qalıq vəsaitə görə illik 5%-ə qədər qazanc əldə edə bilərsən. Fikrimcə, bu əla təklifdir.
+
+NeoKartını elə indi sifariş et və hədiyyə olaraq <span>4000-ə qədər Xoşgəldin bonusu qazan! * </span>
+
+
+<div class="kredit-data">
+    <span>KREDİT KARTI</span>
+    
+
+
+    <div class="kredit table">
+    <table style="border: none;">
+        <tr  style="border-bottom: 1px solid gray; width: 100%; height: 50px;">
+            <th >Güzəşt müddəti:</th>
+            <td style="width: 200px;">45 gün</td>
+        </tr>
+        <tr>
+            <th>Məbləğ:</th>
+            <td>5 000 AZN-dək</td>
+        </tr>
+
+        <tr>
+            <th>Kredit xəttinin müddəti:</th>
+            <td>24 ayadək</td>
+        </tr>
+
+        <tr>
+            <th>Kartın istifadə müddəti:</th>
+            <td>36 ayadək</td>
+        </tr>
+
+        <tr>
+
+            <th>İllik faiz dərəcəsi:</th>
+            <td>24% - 26%</td>
+            
+        </tr>
+
+        <tr>
+            <th>Komissiya:</th>
+            <td>1%</td>
+        </tr>
+
+        <tr>
+            <th>Kredit xəttindən istifadə edilən vəsaitə görə keşbek:</th>
+            <td>2%</td>
+        </tr>
+
+        <tr>
+            <th>Debet qalıq məbləğə görə faiz gəliri:</th>
+            <td>3% - 5% (max. 10 000 AZN)</td>
+        </tr>
+
+        <tr>
+            <th>Şəxsi vəsait karta mədaxil edilərsə, Bank Respublika ATM-lərində nağdlaşdırma:</th>
+            <td>0% (max. 20 000 AZN)</td>
+        </tr>
+
+        
+    </table>
+
+</div>
+<iframe width="900px" height="400px" src="https://www.youtube.com/embed/1YxD1NalU8A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+</div>
+
+
+
+
+
+</div>
+
+
+
+<div class="long-text">
+    <h2><span>Neo Qalaktika</span></h2>
+    <br>
+
+İndi Sən, Neo Qalaktikaya qoşulan tərəfdaşlarımızdan daha çox bonus qazana biləcəksən!
+<br>
+
+Sadəcə ödəniş et və hər ödənişdən daha çox qazan!
+<br>
+<br>
+<br>
+
+ 
+
+ 
+
+<b>Sualların var?  Onda  başlayaq...</b>
+<br>
+
+<span>NeoKartı necə əldə edə bilərəm? </span>
+<br>
+NeoKart Standart və NeoKart Premium kartlarını "Bank Respublika"nın istənilən filial və şöbəsində, Mobil Şöbə tətbiqində, eləcə də bankın internet saytında onlayn sifariş formasını dolduraraq əldə edə bilərsən. Kart müştəriyə 3 iş günü ərzində təqdim edilir.
+<br>
+
+<p>NeoKart Standartın qiyməti 20 AZN, NeoKart Premium isə 80 AZN -dir.</p>
+<br>
+<br>
+
+<b>Bonus balansımı harada görə bilərəm?</b>
+<br>
+<br>
+
+NeoKartı ilə ödənilən hər bir manat 20 NeoBonusu qazandırır. Bonus balansına və NeoKartdakı bütün əməliyyatlara Mobil Şöbə tətbiqindəki "NeoKart" bölümündə baxmaq olar.
+
+Qazanılan bonuslar 3 iş günü ərzində tətbiqdə göstərilir və hesaba köçürüldükləri andan 2 il müddətində aktiv qalır.
+<br>
+<br>
+
+<b>Bonusları harada qazana bilərəm?</b>
+<br>
+<br>
+Obyektin bankın tərəfdaşı olub -olmamasından asılı olmayaraq istənilən yerdə POS terminal vasitəsilə edilən bütün ödənişlər zamanı (Restoran, YDM, Mağazalar, o cümlədən digər mal və xidmətlərin göstərilməsi müqabilində ödənişlər). Aşağıdakılar istisna olmaqla, bütün elektron ticarət (onlayn) əməliyyatlarında:
+
+<ul>
+    <li>Kartlar arasında köçürmələr</li>
+    <li>"Cash by code" xidməti</li>
+    <li>Kredit ödənişi</li>
+    <li>İpoteka ödənişi</li>
+    <li>Kommunal xidmətlərin ödənilməsi</li>
+    <li>Mobil operatorların xidmətləri müqabilində ödənişlər</li>
+    <li>HÖT platformasında ödənişlər</li>
+    <li>TV və İnternet provayderlərinə ödənişlər</li>
+    <li>Mərc oyunları</li>
+</ul>
+<br>
+<br>
+<b>NeoBonusları keşbekə necə dəyişdirmək olar?</b>
+<br>
+<br>
+Qazandığınız bonusları Mobil Şöbə tətbiqindəki "NeoKart" bölümündə keşbekə dəyişə bilərsiniz. Mübadilə, yığılmış bonusların 1000 -ə bölünməsi ilə hesablanır (Məsələn: 2290 NeoBonusu / 1000 = 2.29 AZN). Yığılan bonuslar hər ayın 5 -dən sonra dəyişdirilə bilər. Bonuslar tam həcmdə və ya qismən mübadilə oluna bilər. Aylıq konvertasiya üçün maksimal məbləğ 300 AZN təşkil edir. Keşbek balansı əvvəlki ay ərzində aparılan əməliyyatların nəticəsində formalaşır. Keşbek balansı cari ayda mübadilə olunmursa, bu bonusları yalnız digər opsiyalarda istifadə etmək olar.
+<br>
+<br>
+<b>Bonusları Millərə necə dəyişdirə bilərəm?</b>
+<br>
+<br>
+Bonusları Millərə çevirmək üçün NeoKartı ilə turizm sahəsindəki hər hansı bir xidmətin pulunu ödəmək, daha sonra Mobil Şöbə tətbiqində, NeoKartı / Miles bölumündə bonuslardan istifadə edərək, ödəniş məbləğini qarşılamaq tələb olunur. Həmin məbləğ karta köçürüləcək. Bonuslar 900-ə bölünərək Millərə çevrilir.
+<br>
+<br>
+<b>Bonusları danışıq dəqiqələri və internet paketinə necə çevirmək olar?</b>
+<br>
+<br>
+<b>NeoKart Premium kartının hansı üstünlükləri var?</b>
+<br>
+<br>
+NeoKart Premium sahibləri bir sıra üstünlüklərə malikdirlər.
+<ul>
+    <li>Yüksək Xoşgəldin Bonusu (4000 bonus).</li>
+    <li>Balans məbləği üzərinə daha sərfəli faiz (illik 5% AZN, illik 0,2% USD),</li>
+    <li>İldə iki dəfə Lounge Key xidmətindən pulsuz istifadə.</li>
+    <li>Digər bankların bankomatlarında faizsiz nağdlaşdırma imkanı (10 dəfə).</li>
+</ul>
+<br>
+<br>
+<b>Qalıq məbləğ üzərinə faiz necə hesablanır?</b>
+<br>
+<br>
+Qalıq məbləğ üzərinə faizlər hər ayın əvvəlində hesablanır və NeoKartına müvafiq məbləğdə mədaxil olunur. NeoKartlarında qalıq məbləğ üzərinə faiz: NeoKart Standart illik 3% AZN, illik 0,1% ABŞ dolları. NeoKart Premium illik 5% AZN, illik 0.2% USD.
+<br>
+<br>
+<b>Xoşgəldin Bonusu necə əldə etmək olar?</b>
+<br>
+<br>
+Xoşgəldin bonusu birdəfəlik ən az 300 AZN - NeoStandart, NeoPremium kartı ilə azı 500 AZN məbləğində əməliyyat edən bütün NeoKart sahiblərinə kartın alındığı ilk ayda verilir.
+
+<br>
+Xoşgəldin bonusu  NeoStandart üçün – 2000 bonus, NeoPremium üçün 4000 bonus həcmində hesablanır.
+</div>
+
+
+<div class="last-image">
+    <a href="https://www.bankrespublika.az/uploads/NEO/3.png"><img src="https://www.bankrespublika.az/uploads/NEO/3.png" alt="" width="200px">
+    </a>
+</div>
+ {% endif %}
+{% endfor %}
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+
+    {% endblock %}
+</body>
+</html>

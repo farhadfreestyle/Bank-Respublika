@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kampaniyalar</title>
+    <link rel="stylesheet" href="{{url_for ('static', filename = 'css/kampaniya.css')}}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   
+
+</head>
+<body>
+  {% extends 'header.html' %}
+  {% block content %}
+
+    <div class="compage-container">
+
+    <p><b>Kampaniyalar</b></p>
+
+    <div class="button-container">
+        <div class="buttons">
+    <button class="ferdi">Fərdi müştərilər üçün</button>
+    <button class="koor">Korporativ müştərilər üçün</button>
+</div>
+    <hr>   
+</div>
+
+
+{%for i in data%}
+
+<div class="card-cotainer">
+
+    <div class="card mb-6 compage-kartlar" style="max-width: 100%;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="{{i.image_url}}" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title"><a href="#">{{i.text}}</a></h5>
+              <p class="card-text"><b>{{i.bold}}</b></p>
+              <p class="card-text"><small class="text-muted">{{i.alt}}</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+{%endfor%} 
+
+
+<!-- 
+  <div class="card mb-6 compage-kartlar" style="max-width: 100%;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="https://www.bankrespublika.az/uploads/Maksimal%20endirim_30_fb.jpg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title"><a href="https://www.bankrespublika.az/az/companies-for-individuals/bank-respublika-30-yasi-munasibetile-mikro-kredit-faizlerinde-30-endirim-elan-edib_1883">Bank Respublika 30 yaşı münasibətilə mikro kredit faizlərində 30% endirim elan edib!</a></h5>
+              <p class="card-text"><b>Kampaniya <span class="dates-in-compage">05/06/2022</span> -ci il tarixindən <span class="dates-in-compage">05/06/2022</span> -ci il tarixinədək aktivdir.</b></p>
+              <p class="card-text"><small class="text-muted">Kampaniya çərçivəsində Bank Respublikaya müraciət edən iş adamları, mikro və aqro kredit faizlərində 30% ENDİRİM əldə edə biləcək!</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div> -->
+
+    
+  </div>
+  
+  <script src="{{url_for('static', filename = 'js/kampaniya.js')}}"></script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  
+  {% endblock %}
+</body>
+
+</html>

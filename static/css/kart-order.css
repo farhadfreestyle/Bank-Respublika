@@ -1,0 +1,559 @@
+body{
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    background-color: whitesmoke;
+}
+
+
+.uppertext{
+    font-size: 30px;
+    margin-left: 10%;
+}
+
+
+.order-container{
+    border-radius: 30px;
+    width: 80%;
+    margin-left: 10%;
+    background-color: white;
+}
+
+
+.stage-names, .first-step, .one, .second-step, .two, .third-step, .three{
+    font-size: 20px;
+    display: flex;
+
+}
+
+.first-step, .second-step, .third-step{
+    margin-left: 20px;
+}
+
+
+.second-step, .third-step{
+    opacity: 0.2;
+}
+
+.one-text, .two-text, .three-text{
+    margin-left: 10px;
+}
+
+
+.one-circle, .two-circle, .three-circle{
+   
+    font-size: 25px;
+    margin-left: 5px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    border: 0.5px skyblue solid;
+}
+
+.one, .two, .three{
+    align-items: center;
+    padding-left: 40%;
+    padding-top: 25%;
+   
+
+}
+
+.one-text, .two-text, .three-text{
+    margin-top: 10px;
+}
+
+.first-stage select{
+    background-color: white;
+    box-shadow: 2px;
+    border-radius: 10px;
+    height: 30px;
+    width: 250px;
+}
+
+
+.card-selecting{
+    display: flex;
+}
+
+.firststageoption{
+    font-size: 16px;
+
+}
+
+.filial{
+    margin-top: 50px;
+    display: flex;
+    margin-left: 50px;
+}
+
+#flexCheckDefault{
+    margin-top: 20px;
+    
+}
+
+.filial p {
+    font-size: 13px;
+}
+
+.SMS{
+    border: 1px solid whitesmoke;
+    box-shadow: 2px;
+    align-items: center;
+    border-radius: 10px;
+
+}
+
+.section2{
+    margin-left: 50px;
+}
+
+
+.vl{
+    margin-left: 30px;
+    border-left: 1px solid skyblue ;
+    opacity: 0.4;
+    height: 150px;
+}
+
+
+.vl2{
+    margin-left: 30px;
+    border-left: 1px solid skyblue ;
+    opacity: 0.4;
+    height: 200px;
+}
+
+
+
+.card-picture{
+    height: 135px;
+    border: 1px dashed blue;
+    width: 215px;
+    margin-left: 50px;
+    border-radius: 10px;
+}
+
+
+.description{
+    margin-left: 50%;
+    font-size: 13px;
+    color: blue;
+}
+
+.section1{
+    margin-left: 50px;
+}
+
+.filial-section2 select{
+    margin-left: 20px;
+}
+
+.how{
+    margin-left: 20px;
+}
+
+#filial-select2{
+    margin-top: 20px;
+}
+
+
+.filial-last{
+    margin-left: 50px;
+}
+
+
+
+.mebleg{
+    display: flex;
+    height: 100px;
+}
+
+
+.reqem{
+    width: 200px;
+    border: 0.5px solid white;
+    border-radius: 20px;
+    height: 30px;
+}
+
+
+
+
+.mebleg-all{
+    margin-left: 70%;
+    
+}
+
+
+.mebleg-extra{
+    margin-top: 30px;
+}
+
+.mebleg-muddet{
+    margin-top: 5px;
+}
+
+
+.novbeti{
+    height: 100px;
+    margin-top: 40px;
+    margin-left: 85%;
+}
+
+.novbeti button{
+    font-size: 18px;
+    color: white;
+    width: 200px;
+    height: 50px;
+    border-radius: 15px;
+    background-color: #4B59D1;
+    align-items: center;
+    border: 0;
+    cursor: pointer;
+}
+
+
+.novbeti button:hover{
+    transition: 0.5s;
+    background-color: #57CD4F;
+}
+
+
+
+
+.personal-container{
+    border-radius: 30px;
+    width: 80%;
+    margin-left: 10%;
+    background-color: white;
+}
+
+.first-step2, .second-step2, .third-step2{
+    margin-left: 20px;
+}
+
+.first-step3, .second-step3, .third-step3{
+    margin-left: 20px;
+}
+
+.first-step2, .third-step2{
+    opacity: 0.2;
+}
+
+.first-step3, .second-step3{
+    opacity: 0.2;
+}
+
+
+
+
+.personal-firstpart{
+    height: 200px;
+}
+
+.one-text2, .two-text2, .three-text2{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.one-text3, .two-text3, .three-text3{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+
+
+.stage-names, .first-step2, .one, .second-step2, .two, .third-step2, .three{
+    font-size: 20px;
+    display: flex;
+
+}
+
+
+
+.stage-names, .first-step3, .one, .second-step3, .two, .third-step3, .three{
+    font-size: 20px;
+    display: flex;
+
+}
+
+.second-stage input{
+    border-color: white;
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 300px;
+    height: 40px;
+    
+}
+
+.personal-fourthpart select{
+    border-color: white;
+    border-radius: 10px;
+    height: 40px;
+
+}
+
+.personal-fourthpart{
+    height: 200px;
+    display: flex;
+}
+
+
+.four2{
+    margin-left: 50px;
+}
+
+#four-checkbox{
+    margin-left: 30px;
+    width: 20px;
+    margin-top: 40px;
+   
+}
+
+.personal-fifthpart{
+    display: flex;
+    height: 200px;
+}
+
+
+.personal-sixth{
+    display: flex;
+}
+
+.personal-sixth button{
+    font-size: 18px;
+    color: white;
+    width: 200px;
+    height: 50px;
+    border-radius: 15px;
+    background-color: #4B59D1;
+    align-items: center;
+    border: 0;
+    cursor: pointer;
+}
+
+.personal-sixth button:hover{
+    transition: 0.5s;
+    background-color: #57CD4F;
+}
+
+#geriye:hover{
+    transition: 0.5s;
+    background-color: #57CD4F;
+}
+
+
+
+#Novbeti2{
+    margin-left: 80%;
+}
+
+.sec-image{
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.personal-fourthpart input{
+    border-color: white;
+    border: 0.5px solid antiquewhite;
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 200px;
+    height: 40px;
+}
+
+.personal-fifthpart input{
+    border-color: white;
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 300px;
+    height: 40px;
+
+}
+
+
+
+.vl-in-stage2{
+    margin-left: 30px;
+    border-left: 1px solid skyblue ;
+    opacity: 0.4;
+    height: 300px;
+}
+
+.second-stage{
+    display: flex;
+}
+
+
+.personal-secondpart label{
+    
+    font-size: 13px;
+}
+
+
+.eynilik{
+    margin-top: 5px;
+}
+
+.personal-secondpart{
+    display: block;
+}
+
+
+.Fincode-input{
+    position: relative;
+    
+    width: 100px;
+    height: 50px;
+    z-index: 1;
+}
+
+
+.question-mark{  
+    border-radius: 20px;
+    top: -25px;
+    left:265px;
+    position: relative;
+    width: 20px;
+    z-index: 2;
+    background-color: blue
+ }
+
+
+#Fincode-input{
+    width: 250px;
+}
+
+#question-mark{
+    
+    background-color: blue;
+    border: 1px blue solid;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    
+}
+
+.online-pay::placeholder{
+    text-align: center;
+    font-size: 18px;
+    color: black;
+    
+}
+
+.online-pay{
+    background-image: url(https://imgs.search.brave.com/CU67ulFUm2tYppNV5OPDwOIUffo-jUblwTzKk-xDX6s/rs:fit:820:680:1/g:ce/aHR0cHM6Ly93d3cu/cG5na2V5LmNvbS9w/bmcvZGV0YWlsLzQx/Ny00MTc0OTkwX2hv/dy10by1zZXQtdXNl/LXNtYWxsLWdyZWVu/LWRvdC1pY29uLnBu/Zw);
+    background-size: 20px;
+    background-position: left;
+   
+    background-repeat: no-repeat;
+
+}
+
+.terminal-pay::placeholder{
+    text-align: center;
+    font-size: 18px;
+    color: black;
+    
+}
+
+
+.terminal-pay{
+    background-image: url(https://imgs.search.brave.com/nJv7faOq4Gz0wuelg2aLSdJi39Bek_wBVBSvaMozQE8/rs:fit:1000:1000:1/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzL2FlL2U5/L2IzL2FlZTliMzY0/MDBlNDllYmU4YTE0/ZjdkMjk0N2FlYjMz/LnBuZw);
+    background-size: 15px;
+    background-position: left;
+   
+    background-repeat: no-repeat;
+
+}
+
+.novbeti a{
+    color: white;
+    text-decoration: none;
+
+}
+
+#geriye{
+    background-color: white;
+    
+}
+
+#geriye a{
+    color: black;;
+    text-decoration: none;
+}
+
+
+.personal-firstpart, .personal-secondpart, .personal-thirdpart{
+    margin-left: 20px;
+    height: 300px;
+}
+
+#four3{
+        width: 20px;
+        height: 20px;
+}
+
+.four3{
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.four3 input{
+    height: 20px;
+    width: 20px;
+}
+
+
+#lastinput-in-cardorder{
+    border-color: white;
+    border-radius: 10px;
+    margin-top: 100px;
+    width: 300px;
+    height: 40px;
+    margin-left: 40%;
+}
+
+.third-section-in-cards button{
+    font-size: 18px;
+    color: white;
+    width: 200px;
+    height: 50px;
+    border-radius: 15px;
+    background-color: #4B59D1;
+    border: 0;
+    cursor: pointer;
+    margin-top: 70px;
+    margin-left: 42%;
+   
+
+}
+
+.third-section-in-cards button:hover{
+    transition: 0.5s;
+    background-color: #57CD4F;
+}
+
+
+.personal-sixth a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+
+.card-order-third-stage-container{
+    border-radius: 30px;
+    width: 80%;
+    margin-left: 10%;
+    background-color: white;
+}
+
+#chosen-location{
+    display: none;
+}
+
+#chosen-location input{
+    margin-left: 20px;
+    border-radius: 20px;
+    width: 250px;
+    
+}

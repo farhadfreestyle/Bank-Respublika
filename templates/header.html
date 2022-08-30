@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/header.css')}}">
+
+    
+    
+    
+    
+</head>
+
+<body>
+ 
+
+  
+  <div class="upper">
+    <div class="image"><a href="https://www.bankrespublika.az/az/"><img src="https://www.bankrespublika.az/site/views/site/images/logo1.svg" alt="Bank Respublika Image"></a></div>
+    
+  <nav class="navbar navbar-expand">
+    <ul class="navbar-nav me-auto"> 
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="https://www.bankrespublika.az/az/companies-for-individuals#currencyblock">Valyuta məzənnələri</a>
+      </li>
+      <li class="nav-item dropdown autoopen">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+          Haqqımızda
+        </a>
+        <ul class="dropdown-menu product" aria-labelledby="navbarDropdown" >
+          <li><a class="dropdown-item" href="#">Ümumi məlumat</a></li>
+          <li><a class="dropdown-item" href="#">Bank rekvizitləri</a></li>
+          <li><a class="dropdown-item" href="#">Hesabatlar</a></li>
+          <li><a class="dropdown-item" href="#">Rəhbərlik</a></li>
+          <li><a class="dropdown-item" href="#">Təşkilati struktur</a></li>
+          <li><a class="dropdown-item" href="#">Risklərin idarə edilməsi</a></li>
+          <li><a class="dropdown-item" href="#">Daxili komitələr</a></li>
+          <li><a class="dropdown-item" href="#">Məsuliyyətli kreditləşmə siyasəti</a></li>
+          <li><a class="dropdown-item" href="#">İnsan resursları</a></li>
+          <li><a class="dropdown-item" href="#">Xəbərlər</a></li>
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="https://www.bankrespublika.az/az/companies-for-individuals#">Filial və Bankomatlar</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="https://www.bankrespublika.az/az/companies-for-individuals#">Bizimlə Əlaqə</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="https://www.bankrespublika.az/webim/client.php?locale=az&style=bnkres&url=https%3A//www.bankrespublika.az/&referrer=">Onlayn konsultasiya</a>
+      </li>
+      
+      
+    </ul>
+    <button type="submit" id="submit">Search</button>
+    <div class="languages-container">
+      <img src="https://imgs.search.brave.com/GoX4APRV18Gh_pTqEb8SaP-q58Y2oBUeKnbAVFFOy5E/rs:fit:900:963:1/g:ce/aHR0cHM6Ly93d3cu/Y2xpcGFydGtleS5j/b20vbXBuZ3MvbS8y/MTctMjE3MzQ4Ml93/d3ctdmVjdG9yLWds/b2JlLWJsdWUtZ2xv/YmUtaWNvbi1wbmcu/cG5n" alt="">
+      
+    <div class="languages">
+      <ul class="navbar-nav me-auto"> 
+       
+        <li class="nav-item dropdown autoopen">
+          <a class="nav-link dropdown-toggle text" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+            AZ
+          </a>
+          <ul class="dropdown-menu lang" aria-labelledby="navbarDropdown" >
+            <li>AZ</li>
+            <li>EN</li>
+            <li>RU</li>
+           
+          </ul>
+        </li>
+        
+      </ul>
+    </div>
+
+  </nav>
+</div>
+</div>
+{%block content%}
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+{%endblock%}
+
+
+
+
+</body>
+</html>

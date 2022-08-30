@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/valyuta.css">
+    <script src="/home/farhadfreestyle/Downloads/Final_project/bankrespublika-project-wolves/static/js/valyuta.js"></script>
+    <title>Valyuta</title>
+</head>
+<body>
+    {% extends 'header.html' %}
+    {% block content %}
+
+   <div class="valyuta">
+    <div class="content">
+
+        <p class="alish">Satış</p>
+   
+    <div class="currency-content">
+        <div class="eur">
+            <p class="val-name">EUR</p>
+            <p class="val-num"><img src="https://imgs.search.brave.com/PCmHXKieyX9gQ-1pg4_8TyqgnZO8hEd-9DyBXEmk__U/rs:fit:700:652:1/g:ce/aHR0cHM6Ly9tZWRp/YTIuZmRuY21zLmNv/bS9zdHJhbmdlci9p/bWFnZXIvdS9sYXJn/ZS80MzgyMDgxNi8x/NTkxMTE5MDczLXNj/cmVlbl9zaG90XzIw/MjAtMDYtMDJfYXRf/MTAuMzAuMTNfYW0u/cG5n" alt="black square" style="width: 12px; height:12px"><span class="span">{{euro}}</span></p>
+        </div>
+    
+        <div class="gbp">
+            <p class="val-name">GBP</p>
+            <p class="val-num"><img src="https://imgs.search.brave.com/PCmHXKieyX9gQ-1pg4_8TyqgnZO8hEd-9DyBXEmk__U/rs:fit:700:652:1/g:ce/aHR0cHM6Ly9tZWRp/YTIuZmRuY21zLmNv/bS9zdHJhbmdlci9p/bWFnZXIvdS9sYXJn/ZS80MzgyMDgxNi8x/NTkxMTE5MDczLXNj/cmVlbl9zaG90XzIw/MjAtMDYtMDJfYXRf/MTAuMzAuMTNfYW0u/cG5n" alt="black square" style="width: 12px; height:12px"><span class="span">{{gbp}}</span></p>
+        </div>
+    
+        <div class="rub">
+            <p class="val-name">RUB</p>
+            <p class="val-num"><img src="https://imgs.search.brave.com/PCmHXKieyX9gQ-1pg4_8TyqgnZO8hEd-9DyBXEmk__U/rs:fit:700:652:1/g:ce/aHR0cHM6Ly9tZWRp/YTIuZmRuY21zLmNv/bS9zdHJhbmdlci9p/bWFnZXIvdS9sYXJn/ZS80MzgyMDgxNi8x/NTkxMTE5MDczLXNj/cmVlbl9zaG90XzIw/MjAtMDYtMDJfYXRf/MTAuMzAuMTNfYW0u/cG5n" alt="black square" style="width: 12px; height:12px"><span class="span">{{ruble}}</span></p>
+        </div>
+     
+        
+        <div class="usd">
+            <p class="val-name">USD</p>
+            <p class="val-num"><img src="https://imgs.search.brave.com/PCmHXKieyX9gQ-1pg4_8TyqgnZO8hEd-9DyBXEmk__U/rs:fit:700:652:1/g:ce/aHR0cHM6Ly9tZWRp/YTIuZmRuY21zLmNv/bS9zdHJhbmdlci9p/bWFnZXIvdS9sYXJn/ZS80MzgyMDgxNi8x/NTkxMTE5MDczLXNj/cmVlbl9zaG90XzIw/MjAtMDYtMDJfYXRf/MTAuMzAuMTNfYW0u/cG5n" alt="black square" style="width: 12px; height:12px"><span class="span">{{dollar}}</span></p>
+        </div>
+     
+    </div>
+        
+    </div>
+
+ 
+    
+</div>
+
+{% endblock %}
+</body>
+</html>

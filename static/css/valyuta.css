@@ -1,0 +1,46 @@
+body{
+    background-color: whitesmoke;
+    margin: 0;
+}
+
+.valyuta{
+    width: 80%;
+    border-radius: 20px;
+    background-color: white;
+    margin-left: 10%;
+    margin-top: 50px;
+}
+
+
+.content{
+    width: 60%;
+    margin-left: 20%
+}
+
+.alish{
+    font-size: 20px;
+}
+
+
+
+.valyuta, .content, .currency-content{
+    display: flex;
+
+}
+
+
+.currency-content{
+    margin-left: 100px;
+}
+
+.eur, .gbp, .rub, .usd{
+    margin-left: 50px;
+}
+
+.val-num{
+    font-size: 18px;
+}
+
+span{
+    margin-left: 10px;
+}
